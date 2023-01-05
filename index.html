@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bolum"></div>
+   
+<!-- ÖDEV1:
+4 tane farklı değişken tanımla ve;
+1.değişkende bunun içeriğini büyük harf ile yazdır.
+2.değişkende bunun içeriğini küçük harfler ile yazdır.
+3.değişkende içeriklerden birini elma olarak değiştir.
+4.değişkende içeriklerinden birini elma olarak değiştir ve bunu büyük harf ile yazdır.
+
+ÖDEV2:
+1-String bir değişken tanımla daha sonra bunun uzunluğunu consola yazdır.
+2-Bir cümle oluştur ve içeriği Elma ile başlasın bu cümlenin elma ile başlayıp başlamadığını ekrana yazdır.
+3-Bir cümle oluştur ve daha sonra bu cümleyi bir dizi haline çevir daha sonra consola bu dizinin ikinci elemanını yazdır.
+
+ÖDEV3
+1-Bir tane divin olacak ve buna istedğiin bir ID ver.Ardından javascriprt tarafında 2 değişken belirle ve bunlara 
+rastgele sayılar ata daha sonra bu sayıların bölümünü div içine yazdır.
+2-Bir tane array tanımla ve bu arrayın içine bir kullanıcı objesi tanımla. Bu objede isim ve yaş olacak . Kullanıcın yaşını mevcut 
+yaşından 10 fazla arttır. -->
+
+<script>
+// ÖDEV1
+let birDegisken = "ismail"
+let ikiDegisken = "ETHEM"
+let ucDegisken = "Bir bardak portakal ve nar suyu içtim "
+let dortDegisken = "Bir bardak portakal ve nar suyu içtim "
+// 1.Soru
+birDegisken= birDegisken.toUpperCase();
+console.log(birDegisken);
+//2.soru
+ikiDegisken=ikiDegisken.toLowerCase();
+console.log(ikiDegisken);
+//3.soru
+ucDegisken= ucDegisken.replace('portakal','elma')
+console.log(ucDegisken);
+//4.soru
+dortDegisken= dortDegisken.replace('nar','elma'.toUpperCase())
+console.log(dortDegisken)
+
+//ÖDEV2
+
+//1.soru
+let stringIfade = "Bir string ifade";
+console.log(stringIfade.length);
+
+//2.soru
+let elmaBasla = "Elma kabuklu faydalidir."
+console.log(elmaBasla.startsWith("Elma"));
+
+//3.soru
+let cumleOlustur ="Bir cümle oluştur"
+let arrayCumleOlustur = cumleOlustur.split(" ");
+console.log(arrayCumleOlustur[1]);
+
+//ÖDEV3
+
+//1.Soru
+let x =12;
+let y =3;
+let iciniSec = document.getElementById("bolum")
+iciniSec.innerHTML = x / y;
+//2.Soru
+let arrayTanimla =
+[
+    {isim:"firuze",yas:20}
+];
+
+arrayTanimla[0].yas += 10;
+console.log(arrayTanimla);
+
+
+</script>
+</body>
+</html>
